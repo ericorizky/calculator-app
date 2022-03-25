@@ -1,4 +1,10 @@
-﻿namespace kalkulatorApp1
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace calculator
 {
     class Program
     {
@@ -14,8 +20,8 @@
 
         static void Main(string[] args)
         {
+            menu:
             Console.Title = "Kalkulator";
-        menu:
             Console.WriteLine("Aplikasi Kalkulator");
             Console.WriteLine();
             Console.WriteLine("1. Penjumlahan");
@@ -82,6 +88,7 @@
             else
             {
                 Console.WriteLine("Nilai yang anda inputkan tidak ada");
+                goto menu;
             }
         }
     }
